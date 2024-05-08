@@ -1,0 +1,513 @@
+﻿@model List<Dictionary<string ,string>>
+@{
+    ViewData["Title"] = "Responsive Resume WebSite";
+}
+
+<section id="home" class="section section-home">
+    <div class="container flex-center flex-column">
+        <div class="d-flex justify-between align-center w-full content">
+            <div class="image flex-center">
+                <img src="~/images/main.png" alt="">
+            </div>
+            <div class="w-full information d-flex align-center justify-center">
+                <div class="media-icons fs-large d-flex flex-column">
+                    <a class="theme-text-hover" href="#">
+                        <svg width=" 20" height="20" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </a>
+                    <a class="theme-text-hover" href="https://t.me/ID_MHRB">
+                        <svg width=" 20" height="20" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                        </svg>
+                    </a>
+                    <a class="theme-text-hover" href="https://github.com/mr-mhrb">
+                        <svg width=" 20" height="20" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="d-flex flex-column">
+                    <h2 class="fs-large-ext fw-bold text-color">Hi ,I am Mehrab</h2>
+                    <h3 class="fs-large fw-bold">Full-stack Developer</h3>
+                    <p class="fs-normal fw-normal text-color-secondary">I create stunning websites for your business,
+                        Highly
+
+                        experienced in web design and development.</p>
+
+                    <a class="button theme-bg-hover flex-center" href="#contact">
+                        Contact Me
+                        <svg width="16" height="16" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <span class="scroll-down flex-center fs-medium fw-normal text-color">
+            Scroll Down
+            <svg width="20" height="20" viewBox="0 0 16 16">
+                <path
+                    d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3m4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5" />
+            </svg>
+        </span>
+    </div>
+</section>
+
+<section id="about" class="section section-about">
+    <div class="container flex-center flex-column">
+        <h1 class="section-title fs-large-ext fw-bold text-color"><b class="theme-color">About</b> Me</h1>
+        <div class="content w-full flex-center">
+            <div class="image flex-center">
+                <img src="~/images/about.jpg" alt="">
+            </div>
+            <div class="d-flex flex-column">
+                <div class="description">
+                    <h2 class="fs-large fw-bold text-color">I'm Martian</h2>
+                    <h3 class="fs-medium-ext fw-bold text-color">A Lead <b class="theme-color">Full-stack</b> Developer
+                        based in<b class="theme-color"> Iran</b></h3>
+                    <p class="fs-medium fw-normal text-color-secondary text-color-secondary">I excel in crafting sleek,
+                        contemporary websites, powerful web solutions, and captivating online stores. I strive to
+                        concoct digital user experiences through impactful interactions</p>
+                </div>
+                <ul class="text-color professional-list d-flex justify-between flex-wrap justify-center">
+                    <li class="list-item">
+                        <h3 class="fs-large fw-bold">+5</h3>
+                        <span class="fs-small fw-normal">Years of </br><b class="theme-color">Experiences</b></span>
+                    </li>
+                    <li class="list-item">
+                        <h3 class="fs-large fw-bold">+1k</h3>
+                        <span class="fs-small fw-normal">Happy </br><b class="theme-color">Customers</b></span>
+                    </li>
+                    <li class="list-item">
+                        <h3 class="fs-large fw-bold">+1k</h3>
+                        <span class="fs-small fw-normal">Success </br><b class="theme-color">Projects</b></span>
+                    </li>
+                </ul>
+                <a href="#" class="button">
+                    Download CV
+                    <svg width="16" height="16" viewBox="0 0 16 16">
+                        <path
+                            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                        <path
+                            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section section-skills">
+    <div class="container flex-center flex-column">
+        <h1 class="section-title fs-large-ext fw-bold text-color">My <b class="theme-color">Skills</b></h1>
+        <div class="content w-full flex-center flex-column">
+            <div class="description">
+                <h3 class="fs-large fw-normal text-color">Eductions & Skills</h3>
+                <p class="fs-medium fw-normal text-color-secondary">For more than 5 years our experts have been
+                    accomplishing enough with modern Web Development, new
+                    generation web and app programming language.</p>
+            </div>
+            <div class="educations flex-center flex-wrap w-full">
+                @foreach (var educations in Model)
+                {
+                    <div class="education d-flex flex-column">
+                        <h4 class="label fs-medium fw-normal">Skills</h4>
+                        <ul class="bars">
+                            @foreach (var education in educations)
+                            {
+                                <li class="bar">
+                                    <div class="information d-flex justify-between">
+                                        <span class="skill fs-medium fw-normal text-color">@education.Key</span>
+                                        <span class="percent fs-medium fw-normal text-color">@education.Value</span>
+                                    </div>
+                                    <div class="line">
+                                        <div style="width: @education.Value;" class="value"></div>
+                                    </div>
+                                </li>
+                            }
+
+                        </ul>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-request">
+    <div class="container flex-center flex-column">
+        <div class="request-card w-full">
+            <div class="w-full d-flex align-center flex-wrap justify-between">
+                <div class="content d-flex flex-column">
+                    <h1 class="fs-large fw-bold text-color">Request project</h1>
+                    <p class="fs-medium fw-normal text-color-secondary">Get your project from us with the best quality
+                    </p>
+
+                </div>
+                <a href="#contact" class="button flex-center">
+                    Send Request
+                    <svg width="20" height="20" viewBox="0 0 16 16">
+                        <path
+                            d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1" />
+                        <path
+                            d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z" />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="section section-services">
+    <div class="container flex-center flex-column">
+        <h1 class="section-title fs-large-ext fw-bold text-color">My <b class="theme-color">Services</b></h1>
+        <div class="content w-full flex-center flex-column">
+            <ul class="service-list w-full flex-center flex-wrap">
+                <li class="service-container">
+                    <div class="service-card">
+                        <div class="service-icon theme-color">
+                            <svg width="40" height="40" viewBox="0 0 16 16">
+                                <path
+                                    d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+                            </svg>
+                        </div>
+                        <h3 class="fs-large fw-bold text-color">Web </br>
+                            Application</h3>
+                        <div class="learn-more d-flex align-center fs-medium fw-normal text-color-secondary">
+                            Learn more
+                            <svg width="20" height="20" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3m4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="service-modal flex-center flex-column">
+                        <div class="service-modal-content">
+                            <div class="close-service-modal text-color">
+                                <svg width="18" height="18" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </div>
+                            <h3 class="fs-large fw-bold text-color">Web Application</h3>
+                            <h4 class="fs-medium fw-bold text-color">What is Web Application?</h4>
+                            <p class="fs-small fw-normal text-color-secondary">Today, every business needs to be seen,
+                                so it's essential to globalize its brand. The best way to achieve this is by creating a
+                                personal or commercial website to introduce your brand to everyone and attract numerous
+                                customers. We design this for you in the best possible way, with exceptionally high
+                                quality, and bring your ideas to life.</p>
+                            <h4 class="fs-medium fw-bold text-color">What I provide</h4>
+                            <ul class="service-modal-items">
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Attractive and beautiful user
+                                        interface</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Guaranteed security and high
+                                        speed</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Using the latest technologies</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Using the latest technologies</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="service-container">
+                    <div class="service-card">
+                        <div class="service-icon theme-color">
+                            <svg width="40" height="40" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z" />
+                                <path
+                                    d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5" />
+                            </svg>
+                        </div>
+                        <h3 class="fs-large fw-bold text-color">Web/App </br>
+                            Robot</h3>
+                        <div class="learn-more d-flex align-center fs-medium fw-normal text-color-secondary">
+                            Learn more
+                            <svg width="20" height="20" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3m4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="service-modal flex-center flex-column">
+                        <div class="service-modal-content">
+                            <div class="close-service-modal text-color">
+                                <svg width="18" height="18" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </div>
+                            <h3 class="fs-large fw-bold text-color">Web/App Robot</h3>
+                            <h4 class="fs-medium fw-bold text-color">What is Web/App Robot?</h4>
+                            <p class="fs-small fw-normal text-color-secondary">It seems like you may need to
+                                automatically retrieve data from a website, such as getting prices, or maybe you want to
+                                use an API from a website like Telegram or Instagram. Or perhaps you want to write a bot
+                                that can automatically execute trades for you. We can help you with these tasks and
+                                provide you with the best quality tools to meet your needs.</p>
+                            <h4 class="fs-medium fw-bold text-color">What I provide</h4>
+                            <ul class="service-modal-items">
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Building a social network bot</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Advertising robot in social
+                                        networks</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Trading robots with your personal
+                                        strategy</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Receive and send information from
+                                        different sites</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="service-container">
+                    <div class="service-card">
+                        <div class="service-icon theme-color">
+                            <svg width="40" height="40" viewBox="0 0 16 16">
+                                <path
+                                    d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264m4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264M3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278m-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z" />
+                            </svg>
+                        </div>
+                        <h3 class="fs-large fw-bold text-color">Mobile </br>
+                            Applications</h3>
+                        <div class="learn-more d-flex align-center fs-medium fw-normal text-color-secondary">
+                            Learn more
+                            <svg width="20" height="20" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3m4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="service-modal flex-center flex-column">
+                        <div class="service-modal-content">
+                            <div class="close-service-modal text-color">
+                                <svg width="18" height="18" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </div>
+                            <h3 class="fs-large fw-bold text-color">Mobile Applications</h3>
+                            <h4 class="fs-medium fw-bold text-color">What is Mobile Applications?</h4>
+                            <p class="fs-small fw-normal text-color-secondary">Today, every business needs to be
+                                visible, so it is necessary to globalize its brand. The best way to do this is by
+                                creating a personal or commercial mobile app to introduce your brand to everyone and
+                                attract numerous customers. We design this for you in the best possible way with
+                                exceptionally high quality and bring your ideas to life.</p>
+                            <h4 class="fs-medium fw-bold text-color">What I provide</h4>
+                            <ul class="service-modal-items">
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Beautiful and user-friendly
+                                        design</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Building cross-platform
+                                        applications</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Security and high speed</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="service-container">
+                    <div class="service-card">
+                        <div class="service-icon theme-color">
+                            <svg width="40" height="40" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                                <path
+                                    d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8m-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7" />
+                            </svg>
+                        </div>
+                        <h3 class="fs-large fw-bold text-color">UI/UX </br>
+
+                            Consultancy</h3>
+                        <div class="learn-more d-flex align-center fs-medium fw-normal text-color-secondary">
+                            Learn more
+                            <svg width="20" height="20" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3m4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="service-modal flex-center flex-column">
+                        <div class="service-modal-content">
+                            <div class="close-service-modal text-color">
+                                <svg width="18" height="18" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </div>
+                            <h3 class="fs-large fw-bold text-color">Ui/UX Consultancy</h3>
+                            <h4 class="fs-medium fw-bold text-color">What is UX consulting?</h4>
+                            <p class="fs-small fw-normal text-color-secondary">UX consulting helps companies improve
+                                their product’s overall usability and optimize
+                                expenses
+                                by implementing the right UX processes, methods, and tools.</p>
+                            <h4 class="fs-medium fw-bold text-color">What I provide</h4>
+                            <ul class="service-modal-items">
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Establish the right UX processes</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Create exceptional user
+                                        experiences</span>
+                                </li>
+                                <li class="d-flex align-center">
+                                    <svg class="theme-color" width="16" height="16" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                    <span class="fs-small fw-normal text-color">Discover new business
+                                        opportunities</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section section-contact">
+    <div class="container flex-center flex-column">
+        <h1 class="section-title fs-large-ext fw-bold text-color"><b class="theme-color">Contact</b> Me</h1>
+        <div class="content w-full d-flex justify-between flex-wrap">
+            <div class="ways d-flex flex-column">
+                <ul class="contact-ways d-flex flex-column">
+                    <li class="contact-way d-flex align-center">
+                        <svg width="30" height="30" class="theme-color" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                        <div class="d-flex flex-column contact-way-info">
+                            <h3 class="fs-large fw-bold text-color">Phone</h3>
+                            <span class="fs-medium fw-normal text-color-secondary">Not Found phone number</span>
+                        </div>
+                    </li>
+                    <li class="contact-way d-flex align-center">
+                        <svg width="30" height="30" class="theme-color" viewBox="0 0 16 16">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                        </svg>
+                        <div class="d-flex flex-column contact-way-info">
+                            <h3 class="fs-large fw-bold text-color">Email Address</h3>
+                            <span class="fs-medium fw-normal text-color-secondary">mamoloase@gmail.com</span>
+                        </div>
+                    </li>
+                    <li class="contact-way d-flex align-center">
+                        <svg width="30" height="30" class="theme-color" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                        </svg>
+                        <div class="d-flex flex-column contact-way-info">
+                            <h3 class="fs-large fw-bold text-color">Location</h3>
+                            <span class="fs-medium fw-normal text-color-secondary">Iran ,Tehran Piroozi street</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="form d-flex flex-column">
+                <h3 class="fs-large fw-bold text-color">Form Contact Me</h3>
+                <h4 class="fs-medium fw-normal text-color-secondary"><b class="theme-color">Contact</b> Me and Request
+                    to
+                    do the <b class="theme-color">project<b></b></h4>
+                <form class="contact-form" action="">
+                    <div class="input-card">
+                        <input id="name" required class="fs-medium fw-normal text-color" type="text"
+                            placeholder="Whats your name ?">
+                    </div>
+                    <div class="input-card">
+                        <input id="email" required class="fs-medium fw-normal text-color" type="email"
+                            placeholder="Whats your Email Address ?">
+                    </div>
+                    <div class="input-card">
+                        <textarea id="message" required placeholder="Whats your Message ? "
+                            class="fs-medium fw-normal text-color" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <button class="button submit-contact-btn fs-medium fw-normal flex-center">
+                        Send Message
+                        <svg width="20" height="20" viewBox="0 0 16 16">
+                            <path
+                                d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022" />
+                        </svg>
+                    </button>
+                    <span class="contact-result fs-small fw-normal theme-color"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
